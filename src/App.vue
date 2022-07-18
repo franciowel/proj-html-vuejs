@@ -4,6 +4,8 @@
     <JumbotronComponent/>
     <whatDo/>
     <SecondJumbo/>
+    <sliderCarousel/>
+    <SponsorComponent/>
   </div>
 </template>
 
@@ -12,6 +14,9 @@ import HeaderComponents from './components/HeaderComponents.vue'
 import JumbotronComponent from './components/JumboTronComponent.vue'
 import SecondJumbo from './components/SecondJumbotron.vue'
 import whatDo from './components/WhatDo.vue'
+import sliderCarousel from './components/Carousel.vue'
+import SponsorComponent from './components/SponsorComponent.vue'
+
 
 export default {
   data () {
@@ -50,6 +55,8 @@ export default {
     JumbotronComponent,
     whatDo,
     SecondJumbo,
+    sliderCarousel,
+    SponsorComponent,
     
   }
 }
