@@ -38,7 +38,7 @@ export default {
 @import '../assets/style/colors.scss';
 header{
     height: 80px;
-    background-color: $back_3;
+    background-color: $back_9;
 }
 .navbar{
     height: 80px;

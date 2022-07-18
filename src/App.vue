@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <HeaderComponents :headerLinks="headerLinks"/>
+    <JumbotronComponent/>
   </div>
 </template>
 
 <script>
 import HeaderComponents from './components/HeaderComponents.vue'
+import JumbotronComponent from './components/JumboTronComponent.vue'
 
 export default {
   data () {
@@ -35,12 +37,13 @@ export default {
           text: 'Portfolio',
           link: '#'
         },
-      ]
+      ],
     }
   },
   name: 'App',
   components: {
     HeaderComponents,
+    JumbotronComponent,
   }
 }
 </script>
