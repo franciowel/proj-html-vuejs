@@ -2,10 +2,18 @@
     <section>
         <div class="contain">
             <div class="flexcontain">
-                <!-- info -->
+                <!-- img -->
+                <div class="image">
+                    <img class src="../assets/img/men-data.png" alt="">
+                </div>
+                
                 <div class="info">
-                    <h2>Business Planning <span>Digital Technology</span> Mondern Solution!</h2>
-                    <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
+                    <span class="oculus">Start your Project</span>
+                    <h2>Grow your Business <span>With our Strategy!</span></h2>
+                    <p>
+                        When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.
+                        When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.
+                    </p>
 
                     <!-- buttons -->
                     <div class="btn-contain">
@@ -19,10 +27,6 @@
                     </div>
                 </div>
 
-                <!-- img -->
-                <div class="image">
-                    <img class src="../assets/img/header.png" alt="">
-                </div>
             </div>
         </div>
     </section>
@@ -30,7 +34,7 @@
 
 <script>
 export default {
-    name: 'JumbotronComponent',
+    name: 'SecondJumbo',
 }
 </script>
 
@@ -41,11 +45,17 @@ export default {
 section{
     background-color: $back_9;
 }
-
+.flexcontain{
+    justify-content: space-between;
+}
 .info{
     width: 50%;
     align-self: center;
     color: $text_1;
+    .oculus{
+        margin-bottom: 1.8rem;
+        font-size: 1.2rem;
+    }
     h2{
         font-size: 3.5rem;
         font-weight: 600;
@@ -81,8 +91,8 @@ section{
 .image{
     height: 100%;
     img{
-        padding-top: 2.2rem;
-        padding-bottom: 3rem;
+        width: 80%;
+        padding: 3.2rem 0;
     }
 }
 </style>

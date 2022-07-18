@@ -69,7 +69,7 @@ a{
 }
 
 .btn-sign a{
-    background-image: linear-gradient(-90deg, #1c478a, #059dcb);
+    background-image: linear-gradient(-90deg, #527CEB, #03A7D3E6);
     border-radius: 25px;
     padding: 0.6rem 1.2rem;
 }
