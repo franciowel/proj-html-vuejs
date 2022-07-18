@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -20,4 +22,24 @@ a{
 
 .flexcontain{
     display: flex;
+}
+
+.intro{
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+    }
+    .no-bold{
+        font-weight: 400;
+        margin-left: 10px;
+    }
+    .top-title{
+        color: $text_9;
+        margin: 1.5rem 0;
+    }
+    .bottom-title{
+        color: $text_18;
+        margin: 1.5rem 0;
+        font-size: 1.1rem;
+    }
 }

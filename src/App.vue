@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComponents :headerLinks="headerLinks"/>
     <JumbotronComponent/>
-    <whatWeDo/>
+    <whatDo/>
     <SecondJumbo/>
   </div>
 </template>
@@ -11,7 +11,7 @@
 import HeaderComponents from './components/HeaderComponents.vue'
 import JumbotronComponent from './components/JumboTronComponent.vue'
 import SecondJumbo from './components/SecondJumbotron.vue'
-import whatWeDo from './components/WhatWeDo.vue'
+import whatDo from './components/WhatDo.vue'
 
 export default {
   data () {
@@ -48,7 +48,7 @@ export default {
   components: {
     HeaderComponents,
     JumbotronComponent,
-    whatWeDo,
+    whatDo,
     SecondJumbo,
     
   }
