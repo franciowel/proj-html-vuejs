@@ -1,6 +1,8 @@
 <template>
     <div class="foot">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <div class="contain services">
             <div class="mail-list">
                 <div class="text-intro">
@@ -26,8 +28,22 @@
                         </p>
                     </div>
 
-                    <div class="links">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <div class="columns">
+                        
+                        <div class="links">
+                            <h5>
+                                Quick Links
+                            </h5>
+                            <a :href="item.link" v-for="item, index in quickLinks" :key="index">{{item.text}}</a>
+                        </div>
+
+                        <div class="links">
+                            <h5 class="second-title">
+                                Resources
+                            </h5>
+                            <a :href="item.link" v-for="item, index in resourcesLinks" :key="index">{{item.text}}</a>
+                        </div>
+
                     </div>
 
                     <div class="contact">
@@ -77,34 +93,38 @@
                             <ul class="flexcontain">
                                 <li>
                                     <a href="#">
-                                        Facebook
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        Facebook
+                                        <i class="fa-brands fa-linkedin-in"></i>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        Facebook
+                                        <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        Facebook
+                                        <i class="fa-brands fa-twitter"></i>
                                     </a>
                                 </li>
                             </ul>
 
                             <div class="buttons">
 
-                                <a href="#">Su</a>
+                                <a class="arrow-home" href="#">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </a>
 
-                                <a href="#">Message</a>
+                                <a class="support" href="#">
+                                    <i class="fa-solid fa-comment"></i>
+                                </a>
 
                             </div>
 
@@ -121,9 +141,10 @@
 <script>
 export default {
     name: 'FooterComponent',
-    // props: {
-    //     // headerLinks: Array,
-    // }
+    props: {
+        quickLinks: Array,
+        resourcesLinks: Array,
+    }
 }
 </script>
 
@@ -200,7 +221,7 @@ footer{
 }
 
 .info{
-    width: 25%;
+    width: 20%;
     padding: 2rem 0;
     img{
         margin-bottom: 2rem;
@@ -208,6 +229,30 @@ footer{
     p{
         color: $text_10;
         width: 80%;
+    }
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 2rem;
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    .links a{
+        color: $text_10;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    h5{
+        font-size: 1.2rem;
+        color: $text_1;
+        margin-bottom: 1.2rem;
+    }
+    .second-title{
+        margin-right: 2rem;
     }
 }
 
@@ -250,6 +295,36 @@ footer{
     }
     .buttons{
         margin-left: 2rem;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .arrow-home{
+        color: $text_10;
+        background-color: $text_1;
+        border: 1px solid $text_1;
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: -18px;
+        left: -15px;
+    }
+    .support{
+        color: $text_1;
+        font-size: 1.2rem;
+        background-color: $back_3;
+        border: 1px solid $back_3;
+        height: 45px;
+        width: 45px;
+        display: inline-block;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 50%;
+        margin-left: 3rem;
     }
 }
 </style>

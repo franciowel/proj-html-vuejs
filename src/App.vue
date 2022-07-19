@@ -6,7 +6,7 @@
     <SecondJumbo/>
     <sliderCarousel/>
     <SponsorComponent/>
-    <FooterComponent/>
+    <FooterComponent :quickLinks="quickLinks" :resourcesLinks="resourcesLinks"/>
   </div>
 </template>
 
@@ -51,37 +51,37 @@ export default {
       ],
       quickLinks: [
         {
-          text: 'Home',
-          link: '#'
-        },
-        {
-          text: 'About',
-          link: '#'
-        },
-        {
           text: 'Services',
           link: '#'
         },
-      ],
-      resourcesLinks: [
         {
-          text: 'Home',
-          link: '#'
-        },
-        {
-          text: 'About',
-          link: '#'
-        },
-        {
-          text: 'Services',
+          text: 'Contact',
           link: '#'
         },
         {
           text: 'Blog',
           link: '#'
         },
+      ],
+      resourcesLinks: [
         {
-          text: 'Contact',
+          text: 'Art Design',
+          link: '#'
+        },
+        {
+          text: 'Computer',
+          link: '#'
+        },
+        {
+          text: 'IT News',
+          link: '#'
+        },
+        {
+          text: 'Networking',
+          link: '#'
+        },
+        {
+          text: 'Web Security',
           link: '#'
         },
       ],
