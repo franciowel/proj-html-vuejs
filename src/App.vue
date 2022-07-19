@@ -5,6 +5,8 @@
     <whatDo/>
     <SecondJumbo/>
     <sliderCarousel/>
+    <priceList/>
+    <latestPost/>
     <peopleSay/>
     <SponsorComponent/>
     <FooterComponent :quickLinks="quickLinks" :resourcesLinks="resourcesLinks"/>
@@ -20,6 +22,8 @@ import sliderCarousel from './components/Carousel.vue'
 import SponsorComponent from './components/SponsorComponent.vue'
 import FooterComponent from './components/FooterComponents.vue'
 import peopleSay from './components/peopleSay.vue'
+import priceList from './components/PriceList.vue'
+import latestPost from './components/LatestPost.vue'
 
 
 export default {
@@ -96,6 +100,8 @@ export default {
     whatDo,
     SecondJumbo,
     sliderCarousel,
+    priceList,
+    latestPost,
     peopleSay,
     SponsorComponent,
     FooterComponent,

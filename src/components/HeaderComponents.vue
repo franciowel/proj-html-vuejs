@@ -43,6 +43,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 87;
 }
 .navbar{
     height: 80px;
@@ -76,6 +77,11 @@ a{
     background-image: linear-gradient(-90deg, #527CEB, #03A7D3E6);
     border-radius: 25px;
     padding: 0.6rem 1.2rem;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px rgba(77, 124, 226, 0.4);
+    }
 }
 
 </style>

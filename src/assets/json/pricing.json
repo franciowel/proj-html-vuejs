@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Designing",
+        "type": "process",
+        "price": "40",
+        "creative": "Design Enabled",
+        "vibrant": "Color Usage",
+        "eye": "Catching Design",
+        "extreme": "Typography",
+        "exceptional": "Design",
+        "identity": "even"
+    },
+    {
+        "title": "Developing",
+        "type": "product",
+        "price": "60",
+        "creative": "Design Enabled",
+        "vibrant": "Color Usage",
+        "eye": "Catching Design",
+        "extreme": "Typography",
+        "exceptional": "Design",
+        "identity": "odd"
+    },
+    {
+        "title": "Supporting",
+        "type": "clients",
+        "price": "80",
+        "creative": "Design Enabled",
+        "vibrant": "Color Usage",
+        "eye": "Catching Design",
+        "extreme": "Typography",
+        "exceptional": "Design",
+        "identity": "even"
+    }
+]

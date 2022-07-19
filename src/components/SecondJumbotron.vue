@@ -80,12 +80,21 @@ section{
         padding: 0.8rem 1.5rem;
         border-radius: 25px;
         color: $text_1;
+        transition: all 0.2s ease-in-out;
     }
     .try{
             background-image: linear-gradient(90deg, #B6246E, #F9636B);
+            &:hover{
+                color: rgba(255, 255, 255, 1);
+                box-shadow: 0 5px 15px rgba(247, 73, 140, 0.479);
+            }
         }
     .explore{
             background-image: linear-gradient(90deg, #527CEB, #03A7D3E6);
+            &:hover{
+                color: rgba(255, 255, 255, 1);
+                box-shadow: 0 5px 15px rgba(77, 124, 226, 0.4);
+            }
         }
 }
 .image{
