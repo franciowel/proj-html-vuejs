@@ -8,7 +8,7 @@
                 <div class="bottom-title">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</div>
             </div>
 
-            <testimonialsCard :json="cardJson"/>
+            <testimonialCards :json="cardJson"/>
 
         </div>
     </section>
@@ -16,11 +16,11 @@
 
 <script>
 import testimonials from '../assets/json/testimonials.json';
-import testimonialsCard from './TestimonialsCards.vue';
+import testimonialCards from './TestimonialsCards.vue';
 
 export default {
     name: 'peopleSay',
-    components: { testimonialsCard },
+    components: { testimonialCards },
     data() {
         return {
             cardJson: testimonials,
@@ -35,7 +35,7 @@ export default {
 
 section{
     background-color: $back_1;
-    padding: 3rem 0;
+    padding: 4.5rem 0;
 }
 
 .btn-contain{
