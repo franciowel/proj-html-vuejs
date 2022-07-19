@@ -5,6 +5,7 @@
     <whatDo/>
     <SecondJumbo/>
     <sliderCarousel/>
+    <peopleSay/>
     <SponsorComponent/>
     <FooterComponent :quickLinks="quickLinks" :resourcesLinks="resourcesLinks"/>
   </div>
@@ -18,6 +19,7 @@ import whatDo from './components/WhatDo.vue'
 import sliderCarousel from './components/Carousel.vue'
 import SponsorComponent from './components/SponsorComponent.vue'
 import FooterComponent from './components/FooterComponents.vue'
+import peopleSay from './components/peopleSay.vue'
 
 
 export default {
@@ -94,8 +96,10 @@ export default {
     whatDo,
     SecondJumbo,
     sliderCarousel,
+    peopleSay,
     SponsorComponent,
     FooterComponent,
+
     
   }
 }
