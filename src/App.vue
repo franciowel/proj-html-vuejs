@@ -6,6 +6,7 @@
     <SecondJumbo/>
     <sliderCarousel/>
     <SponsorComponent/>
+    <FooterComponent/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import SecondJumbo from './components/SecondJumbotron.vue'
 import whatDo from './components/WhatDo.vue'
 import sliderCarousel from './components/Carousel.vue'
 import SponsorComponent from './components/SponsorComponent.vue'
+import FooterComponent from './components/FooterComponents.vue'
 
 
 export default {
@@ -47,6 +49,42 @@ export default {
           link: '#'
         },
       ],
+      quickLinks: [
+        {
+          text: 'Home',
+          link: '#'
+        },
+        {
+          text: 'About',
+          link: '#'
+        },
+        {
+          text: 'Services',
+          link: '#'
+        },
+      ],
+      resourcesLinks: [
+        {
+          text: 'Home',
+          link: '#'
+        },
+        {
+          text: 'About',
+          link: '#'
+        },
+        {
+          text: 'Services',
+          link: '#'
+        },
+        {
+          text: 'Blog',
+          link: '#'
+        },
+        {
+          text: 'Contact',
+          link: '#'
+        },
+      ],
     }
   },
   name: 'App',
@@ -57,6 +95,7 @@ export default {
     SecondJumbo,
     sliderCarousel,
     SponsorComponent,
+    FooterComponent,
     
   }
 }

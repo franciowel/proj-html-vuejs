@@ -39,6 +39,10 @@ export default {
 header{
     height: 80px;
     background-color: $back_9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .navbar{
     height: 80px;

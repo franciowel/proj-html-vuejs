@@ -40,6 +40,7 @@ export default {
 
 section{
     background-color: $back_9;
+    margin-top: 80px;
 }
 
 .info{

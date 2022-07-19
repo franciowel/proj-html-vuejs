@@ -1,5 +1,5 @@
 <template>
-    <div class="contain">
+    <div class="card-contain">
         <div class="card" v-for="item, index in json" :key="index">
             <img :src="require(`../assets/img/${item.img}`)" alt="">
             <h5>{{item.job}}</h5>
@@ -21,8 +21,9 @@ export default {
 @import '../assets/style/common.scss';
 @import '../assets/style/colors.scss';
 
-.contain{
+.card-contain{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 .card{
