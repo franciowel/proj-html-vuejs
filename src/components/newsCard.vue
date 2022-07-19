@@ -35,14 +35,14 @@ export default {
     justify-content: space-between;
 }
 .card{
-    padding: 1.5rem 1.3rem;
+    padding: 2.5rem 1rem;
     margin: 1rem;
 }
 
 .important{
     background-image: url(../assets/img/headway-537308-unsplash-1380x703.jpg);
     border-radius: 30px;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     width: 55%;
